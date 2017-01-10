@@ -1,0 +1,780 @@
+/*Name in top left corner of nav bar*/
+#nav-name {
+  float: left;
+  margin-top: -40px;
+  font-size: 30px;
+  text-shadow: 1px 1px #0C846B;
+}
+
+/*Nav Bar*/
+.nav {
+  background-color: #CCC8D6; /*#E9345A;/*#7A2741;*/
+  height: 60px;
+  width: 100%;
+  z-index: 150;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+  position: fixed;
+}
+
+/*Navigation buttons*/
+.nav-buttons {
+  text-decoration: none;
+  margin: 10px;
+  color: #4F4B4C;
+  font-weight: bold;
+  float: right;
+  padding: 5px 50px;
+  /*padding: 0.5% 3%;*/
+  display: inline;
+  background-color: #CCC8D6;
+  border: none;
+}
+
+/*Navigation buttons on hover*/
+.nav-buttons:hover {
+  background-color: white;
+  color: #b41234;
+  font-weight: bold;
+}
+
+/*Menu button on collapsed version of Nav bar for smaller devices*/
+#pull {
+  border-right: 0;
+  border-bottom: 0;
+  display: none;
+  text-decoration: none;
+  text-align: left;
+}
+
+/*Collapse Menu button on version of nav bar for smaller devices*/
+#collapse {
+  border-right: 0;
+  display: none;
+  text-decoration: none;
+}
+
+/*Header at top containing name*/
+#header {
+  box-shadow: 0 6px 5px rgba(0, 0, 0, .4);
+  height: 100%;
+  padding-top: 110px;
+  padding-bottom: 100px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  color: white;
+  position: relative;
+  width: 100%; 
+  background: -webkit-linear-gradient(#34E9C3, #12B492, #0C846B);
+  background: -o-linear-gradient(#34E9C3, #12B492, #0C846B);
+  background: -moz-linear-gradient(#34E9C3, #12B492, #0C846B);
+  background: linear-gradient(#34E9C3, #12B492, #0C846B);
+  text-shadow: 4px 4px #0C846B;
+}
+
+/*Main headline in header*/
+h1 {
+  font-family: 'Righteous', sans-serif;
+  font-size: 90px;
+}
+
+/*Subheader in header*/
+h2 {
+  font-size: 35px;
+}
+
+/*Div with About section*/
+#about {
+  background-color: #F3F6FC;
+  margin-top: -200px;
+  min-width: 100%;
+  border: 5px solid #A9B0B6;
+  padding: 4%;
+  margin-left: -10px;
+}
+
+/*Headlines in About div*/
+.headlines {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+/*Div with Portfolio section*/
+#portfolio {
+  padding: 4%;
+  min-width: 100%;
+  height: 100%;
+  background-color: #93A6B4;
+  border: 1px solid #A9B0B6;
+  margin-left: -10px;
+}
+
+/*Div with Contact section*/
+#contact {
+  padding: 4%;
+  min-width: 100%;
+  /*background-color: #CAD7E1;*/
+  border: 2px solid #A9B0B6;
+  margin-left: -10px;
+  color: white;
+  position: relative;
+}
+
+/*Controls size and alignment of div containing p element in contact div*/
+#contact-p {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Contact form*/
+input, textarea {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+}
+
+/*Submit button for contact form*/
+.submit {
+  background-color: #b41234;
+  color: white;
+  padding: 1% 5%;
+  border: 1px solid #b41234;
+  border-bottom: 8px solid #85051C;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: #E33152;
+}
+
+/*Vist my Github and Visit my LinkedIn buttons*/
+.visit-button {
+  background-color: #b41234;
+  font-family: Montserrat;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #b41234;
+  border-bottom: 8px solid #85051C;
+  margin: 10px;
+  padding: 1% 2%;
+  width: 250px;
+}
+
+.visit-button:hover {
+  background-color: white;
+  color: 	#b41234;
+  font-weight: bold;
+}
+
+
+/*Visit me footer*/
+#footer {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 90px;
+  background: -webkit-linear-gradient(#34E9C3, #12B492, #0C846B);
+  background: -o-linear-gradient(#34E9C3, #12B492, #0C846B);
+  background: -moz-linear-gradient(#34E9C3, #12B492, #0C846B);
+  background: linear-gradient(#34E9C3, #12B492, #0C846B);
+  margin-right: 0%;
+  margin-left: 0%;
+  box-shadow: 0px -4px 5px rgba(0, 0, 0, .4);
+}
+
+/*Copyright notice in the footer*/
+#copyright {
+  text-align: center;
+  color: white;
+  margin-top: -80px;
+  margin-bottom 0px;
+  font-size: 16px;
+}
+
+p {
+  padding: 50px;
+}
+
+li {
+  display: inline;
+}
+
+/*Screenshots of portfolio projects*/
+figure {
+  display: table;
+  border-top: none;
+  height: 100%;
+  width: 100%;
+}
+
+/*Headlines/Titles of portfolio projects*/
+figcaption {
+  display: table-caption;
+  border-bottom: none;
+  border: 3px solid #CAD7E1;
+  border-radius: 10px;
+  width: 350px;
+  padding: 0.2em;
+  caption-side: top;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -15px;
+  font-weight: bold;
+}
+
+/*Screenshots of projects*/
+.placeholder {
+  height: 50%;
+  width: 50%;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+body {
+  text-align: center;
+  background-color: #0B2F4C;
+  font-family: Montserrat;
+  font-size: 20px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.img-responsive {
+  display: block; 
+  height: 50%; 
+  width: 50%;
+}
+
+/*Headshot image of me at the top of About section*/
+#me-img {
+  width: 20%;
+  height: 20%;
+  border-radius: 12%;
+  float: left;
+  margin: 0px 50px 10px 30px;
+  box-shadow: -10px 5px 15px 2px rgba(0, 0, 0, .4);
+}
+
+/*Intro paragraph in the About Me div*/
+#intro {
+  clear: right;
+  text-align: left;
+  margin-top: -40px;
+}
+
+#blog {
+  margin-bottom: 70px;
+}
+
+.background {
+  margin-top: 180px;
+  margin-bottom: 50px;
+}
+
+/*Font Awesome bullet points in About section*/
+.fa-ul {
+  text-align: left;
+  margin-left: 0px;
+}
+
+/*Project descriptions below each portfolio project*/
+.description {
+  border: 3px solid #CAD7E1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 642px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+}
+
+/*Fixed background image in the Contact section*/
+.tinted-image {
+  background: 
+    linear-gradient(
+      rgba(202,215,225, 0.2),
+      rgba(202,215,225, 0.2)
+      ),
+    url("http://res.cloudinary.com/lqiwcxzks/image/upload/v1483631685/texture-1893783_960_720_oy4mlx.jpg") center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*Titles of each main div- About, Portfolio, and Contact*/
+.titles {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*Bottom margin for Portfolio title in the div*/
+#make-space {
+  margin-bottom: 70px;
+}
+
+/*Link in the See Full Portfolio button*/
+#link {
+  padding: 0% 3%;
+}
+
+/*All Font Awesome bullet points*/
+.li-align {
+  margin: 30px;
+}
+
+/*List of technologies & skills bullet points*/
+#list1 {
+  margin: 10px;
+  display: inline-block;
+  width: 90%;
+}
+
+/*Technologies & Skills headline position*/
+#h-align {
+  margin-bottom: 20px;
+}
+
+
+/*Sizing on screens no larger than 1024px. For responsive web design.*/
+@media screen and (max-width: 1024px) {
+ 
+ .nav {
+    height: auto;
+  }
+
+ .nav-buttons {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-bottom: 1px solid #576979;
+    border-right: 1px solid #576979;
+    float: right;
+    position: relative;
+  }
+  
+  #header {
+    padding-top: 300px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+  
+  .background {
+    margin: 0% 0% 0% 0%;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .icons {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .description {
+    max-width: 530px;
+    font-size: 12px;
+  }
+  
+  .placeholder {
+    min-width: 75%;
+    min-height: 75%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .descrip-pad {
+    margin: -15px;
+  }
+  
+}
+  
+  
+/*Sizing on screens no larger than 768px. For responsive web design.*/
+@media screen and (max-width: 768px) {
+  
+  #intro { 
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  
+  .descrip-pad {
+    margin: -20px;
+  }
+  
+  .description {
+    max-width: 420px;
+    font-size: 12px;
+  }
+  
+  .li-align {
+    margin-left: -255px;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
+  }  
+  
+  .nav {
+    border-bottom: 0;
+  }
+  
+  .nav-buttons {
+    display: none;
+    height: auto;
+  }
+  
+  #pull {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  
+  #pull:after {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+  }
+  
+  #header {
+    padding-top: 300px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .placeholder {
+    min-width: 450px;
+    min-height: 220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+}
+  
+/*Sizing on screens no larger than 480px. For responsive web design.*/
+@media only screen and (max-width: 480px) {
+
+  .description {
+    max-width: 300px;
+    font-size: 12px;
+  }
+  
+  #contact {
+    padding: -10px;
+  }
+  
+  #intro { 
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  
+ .placeholder {
+    min-width: 335px;
+    min-height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  figcaption {
+    max-width: 220px;
+    font-size: 20px;
+  }
+  
+  figure {
+    width: 150px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+ 
+  #header {
+    padding-top: 55px;
+    padding-bottom: 35px;
+  }
+  
+  #nav-name {
+    display: none;
+  }
+  
+  .nav {
+    border-bottom: 0;
+  }
+  
+  .nav-buttons {
+    display: none;
+    height: auto;
+  }
+  
+  #pull {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  
+  #pull:after {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+  
+  figcaption {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+
+}
+
+/*Sizing on screens no larger than 320px. For responsive web design.*/
+@media only screen and (max-width: 320px) {
+ 
+  body {
+    max-width: 100%;
+  }
+  
+  .visit-button{
+    max-width: 75%;
+  }
+  
+  #foot {
+    font-size: 12px;
+  }
+  
+  .descrip-pad {
+    margin: -40px;
+  }
+  
+   #contact-p {
+    margin: -20px;
+  }
+  
+  .description {
+    max-width: 250px;
+    font-size: 12px;
+  }
+
+  .placeholder {
+    min-width: 275px;
+    min-height: 175px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  
+  #nav-name {
+    display: none;
+  }
+  
+  .nav {
+    height: -30%;
+  }
+   
+  .nav-buttons {
+    display: none;
+    height: auto;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+ .placeholder {
+    height: 10%;
+    width: 10%;
+  }
+  
+  figcaption {
+    font-size: 10px;
+  }
+  
+  figure > img {
+    max-width: 30px;
+  }
+  
+  #contact {
+    padding: -10%;
+    min-width: 100%;
+    background-color: #CAD7E1;
+    border: 1px solid #A9B0B6;
+    margin-left: -10px;
+  }
+  
+  #intro { 
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  
+  
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+ 
+}
+
+/*Sizing on screens no larger than 240px. For responsive web design.*/
+@media only screen and (max-width: 240px) {
+  
+  .nav {
+    border-bottom: 0;
+  }
+  
+  .nav-buttons {
+    display: none;
+    height: auto;
+  }
+  
+  .nav-buttons {
+    display: block;
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #576979;
+  }
+  
+   h1 {
+    font-size: 40px;
+  }
+  
+   figcaption {
+     margin-left: 13px;
+     margin-right: 13px;
+  }
+  
+   figure {
+     width: 150px;
+     height: 100px;
+     margin-right: auto;
+     margin-left: auto;
+  }
+ 
+}
+
+
+/* footer social media icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+/* footer social icons */
+
+.social-network a.icoGithub:hover {
+  background-color:#4078c0;
+}
+
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+
+.social-network a.icoFreeCodeCamp:hover {
+  background-color: #016101;
+}
+
+.social-network a.icoCodePen:hover {
+  background-color: black;
+}
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoGithub:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	font-size: 35px;
+}
+
+.social-circle li i {
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+}
+
+/*Rotational effect for social media icons*/
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+/*End social media icon styling*/
